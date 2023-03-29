@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/estilo.css" />
 </head>
 
-<body>
+<body class="conteudo">
     <!--Início do header-->
     <header>
         <section>
@@ -36,7 +36,7 @@
     <!--Início do main-->
     <main>
         <!--Início da section de conteúdo do site-->
-        <section>
+        <section class="sobre">
             <!--Conteúdo de texto sobre o site-->
             <article>
                 <h1>Formulário de Contato</h1>
@@ -49,20 +49,20 @@
                     <form id="frmInscricao" action="contato.php" method="POST">
 
                         <label>Nome:</label><br>
-                        <input type="text" required="required" id="txtNome" maxlength="100" size="50"><br><br>
+                        <input class="entrada" type="text" required="required" id="txtNome" maxlength="100" size="50"><br><br>
                         
                         <label>Data de Nascimento:</label><br>
-                        <input type="date" required="required" id="txtData"><br><br>
+                        <input class="entrada" type="date" required="required" id="txtData"><br><br>
 
                         <label>Sexo:</label><br>
-                        <input type="radio" name="rdoSexo" value="M" required="required">
+                        <input class="entrada" type="radio" name="rdoSexo" value="M" required="required">
                         <label>Masculino</label>
-                        <input type="radio" name="rdoSexo" value="F" required="required">
+                        <input class="entrada" type="radio" name="rdoSexo" value="F" required="required">
                         <label>Feminino</label>
                         <br><br>
 
                         <label>Endereço:</label><br>
-                        <input type="text" required="required" id="txtLogradouro" maxlength="100" size="50"><br><br>
+                        <input class="entrada" type="text" required="required" id="txtLogradouro" maxlength="100" size="50"><br><br>
 
                         <label>Estado:</label><br>
                         <select id="cbxEstado" required="required">
@@ -71,7 +71,7 @@
                             <option value="2">MG</option>
                         </select><br><br>
 
-                        <label>Cidade:</label><br>
+                        <label >Cidade:</label><br>
                         <select id="cbxCidade" required="required">
                             <option value="">-Selecione-</option>
                             <option value="1">Florianópolis</option>
@@ -79,10 +79,10 @@
                         </select><br><br>
 
                         <label>Celular:</label><br>
-                        <input type="tel" required="required" id="txtCelular" size="50" placeholder="(##) #####-####" maxlength="15"><br><br>
+                        <input class="entrada" type="tel" required="required" id="txtCelular" size="50" placeholder="(##) #####-####" maxlength="15"><br><br>
 
                         <label>Email:</label><br>
-                        <input type="email" required="required" size="50" id="txtEmail"><br><br>
+                        <input class="entrada" type="email" required="required" size="50" id="txtEmail"><br><br>
 
                         <label>Áreas de Interesse:</label><br>
                         <input type="checkbox" value="HTML" name="chkAreasInteresse">
@@ -93,9 +93,9 @@
                         <label>JavaScript</label><br><br>
 
                         <label>Mensagem:</label><br><br>
-                        <textarea cols="50" rows="5" required="required"></textarea><br><br>
+                        <textarea class="entrada" cols="50" rows="5" required="required"></textarea><br><br>
                         
-                        <input id="btnEnviar" type="submit" value="Enviar" />
+                        <input class="botao" id="btnEnviar" type="submit" value="Enviar" />
                     </form>
                 </fieldset>
             </article>
@@ -108,7 +108,7 @@
     <!--Início do footer-->
     <footer>
         <!--Início das redes sociais-->
-        <ul>
+        <ul class="linha">
             <li>
                 <a href="#">
                     <img src="./imagens/logo-insta.png" alt="Instagram"/>
